@@ -1,11 +1,7 @@
 import React from "react";
 import { Image, StyleSheet, Text, View } from "react-native";
-import { Card, DataTable } from "react-native-paper";
-import {
-  courses,
-  marks as marksData,
-  subjects as subjectsData,
-} from "../data/StudentsDb";
+import { Card, DataTable, Avatar } from "react-native-paper";
+import { courses } from "../data/StudentsDb";
 
 const Subjects = ({ student }) => {
   const course = courses.find((c) => c.id === student.course_id);

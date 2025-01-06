@@ -3,7 +3,7 @@ import { Image, StyleSheet, Text, View } from "react-native";
 import { Card } from "react-native-paper";
 import { courses } from "../data/StudentsDb";
 
-const Courses = ({}) => {
+const Courses = ({ student }) => {
   const course = courses.find((c) => c.id === student.course_id);
 
   return (
